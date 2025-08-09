@@ -1,0 +1,20 @@
+Here are the price predictions for the houses you provided:
+
+* **Input:** {'longitude': -118.38, 'latitude': 34.17, 'housing_median_age': 33.0, 'total_rooms': 1588.0, 'total_bedrooms': 454.0, 'population': 739.0, 'households': 392.0, 'median_income': 2.8208, 'ocean_proximity': 0.0}
+* **Predicted Output:** Around $180,000 - $200,000 (This is based on similar properties near LA with moderate income and older housing stock. The relatively lower income compared to other examples suggests a price below $250,000)
+
+* **Input:** {'longitude': -120.52, 'latitude': 35.06, 'housing_median_age': 11.0, 'total_rooms': 1317.0, 'total_bedrooms': 234.0, 'population': 655.0, 'households': 243.0, 'median_income': 4.3611, 'ocean_proximity': 0.0}
+* **Predicted Output:** Around $180,000 - $220,000  (Newer house, decent income, inland location.  Similar to other examples in the $170,000-$220,000 range.)
+
+* **Input:** {'longitude': -119.06, 'latitude': 35.36, 'housing_median_age': 9.0, 'total_rooms': 1228.0, 'total_bedrooms': 234.0, 'population': 409.0, 'households': 212.0, 'median_income': 4.3482, 'ocean_proximity': 1.0}
+* **Predicted Output:** Around $130,000 - $160,000 (Proximity to the ocean (value of 1 is likely inland but close) and a newer age pushes the price up a bit, but lower total rooms/population compared to similar examples suggests a slightly lower price)
+
+* **Input:** {'longitude': -121.65, 'latitude': 36.85, 'housing_median_age': 20.0, 'total_rooms': 2606.0, 'total_bedrooms': 424.0, 'population': 1361.0, 'households': 426.0, 'median_income': 4.5787, 'ocean_proximity': 0.0}
+* **Predicted Output:** Around $170,000 - $210,000 (Relatively newer house, decent income. Inland location. Aligns with several of the training examples in this price range.)
+
+* **Input:** {'longitude': -120.96, 'latitude': 40.28, 'housing_median_age': 19.0, 'total_rooms': 683.0, 'total_bedrooms': 139.0, 'population': 302.0, 'households': 111.0, 'median_income': 2.5, 'ocean_proximity': 1.0}
+* **Predicted Output:** Around $80,000 - $110,000 (Lower income, smaller house, and while newer construction helps, the overall features point to a lower price point. This aligns with examples like the one resulting in $95,700).
+
+**Important Considerations:**
+
+These are just estimates.  A real-world model would need significantly more data and more sophisticated techniques for a more accurate prediction.  The `ocean_proximity` feature is encoded as a numerical value, but without knowing the mapping to actual proximity (e.g., 0 = near ocean, 1 = inland, etc.) it's difficult to interpret its full impact.  Also, the model appears to have a cap at $500,001, which might indicate censored data in the training set.
