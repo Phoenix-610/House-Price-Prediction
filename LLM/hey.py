@@ -12,7 +12,7 @@ print("Starting script...")
 # Your code  
 
 # ==== STEP 1: Set up Gemini API ====  
-genai.configure(api_key="AIzaSyBdUB4PFEDHYIUkG_z2JSpKyjEDzfubl30")  # Replace with your actual API key  
+genai.configure(api_key="")  # Replace with your actual API key  
 
 # Use the correct model name format  
 model = genai.GenerativeModel("models/gemini-1.5-pro")  # Replace with the correct identifier for the model  
